@@ -12,6 +12,17 @@ parser.add_argument(
 
 
 def koch_curve(t, order, size):
+    """
+    Generate a Koch curve using recursion.
+    
+    Parameters:
+        t (Turtle): The turtle object used for drawing.
+        order (int): The order of the Koch curve. Determines the level of recursion.
+        size (float): The length of the line segment for the current level of recursion.
+    
+    Returns:
+        None
+    """
     if order == 0:
         t.forward(size)
     else:
